@@ -30,7 +30,7 @@ public class Link {
            }  
         }
         // -------------------------------------------------------------
-        public void displayLink() // display this link
+        public void  displayLink() // display this link
         {
              System.out.print(iData + "");
         }
