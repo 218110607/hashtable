@@ -77,8 +77,9 @@ public class HashTableC {
     // -------------------------------------------------------------    
     public void delete(String key) // delete a link
     {
-        int hashVal = hashFunc(key); // hash the key
-        hashArray[hashVal].delete(key); // delete link
+       
+        int hashVal = hashFunc(key); // hash the key        
+        hashArray[hashVal].delete(key,this.KeyOrder); // delete link
     } // end delete()
     // -------------------------------------------------------------
 } // end class HashTable

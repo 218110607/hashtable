@@ -36,21 +36,29 @@ public class SortedList {
         this.first = first;
     }
     // -------------------------------------------------------------
-    public void delete(String key) // delete link
+    public void delete(String key,int keyOrder) // delete link
     { // (assumes non-empty list)
+        System.out.println(key);
+
         Link previous = null; // start at first
         Link current = first;
-        // until end of list,
-        while( current != null)// && key != current.getKey(keyOrder) )
-        { // or key == current,
+        while( current != null ){
+          
+            
+            // disconnect link
+            if(key.compareTo(current.getKey(keyOrder)) == 0 )
+            {
+                if(previous==null) // if beginning of list
+                     first = first.next; // delete first link
+                 else // not at beginning
+                     previous.next = current.next; // delete current link
+            }
             previous = current;
             current = current.next; // go to next link
+            
         }
-        // disconnect link
-        if(previous==null) // if beginning of list
-            first = first.next; // delete first link
-        else // not at beginning
-             previous.next = current.next; // delete current link
+        // until end of list,
+        
     } // end delete()
     // -------------------------------------------------------------
     public Link find(String key,int keyOrder) // find link
