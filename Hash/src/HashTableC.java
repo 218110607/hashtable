@@ -5,14 +5,13 @@ public class HashTableC {
     private int arraySize;
     private int Prime;
     private int KeyOrder;
-    private DataItem nonItem; // for deleted items
+   
     // -------------------------------------------------------------
     public HashTableC(int size,int prime,int keyOrder) // constructor
     {
         arraySize = size;
         Prime = prime;
-        KeyOrder = keyOrder;        
-        nonItem = new DataItem("-1","-1","-1","-1"); // deleted item key is -1
+        KeyOrder = keyOrder;               
         hashArray = new SortedList[arraySize]; // create array
         for(int j=0; j<arraySize; j++){ // fill array
             hashArray[j] = new SortedList(); // with lists
@@ -49,14 +48,12 @@ public class HashTableC {
         }                                                         
     }
     // -------------------------------------------------------------     
-
     public void displayTable()
-    {
-        System.out.print("Table: ");
+    {               
         for(int j=0; j<arraySize; j++)
-        {
-            System.out.print(j + "."); // display cell number
-            hashArray[j].displayList(); // display list
+        {            
+            if(hashArray[j] != null )                
+               hashArray[j].displayList(); // display list
         }       
     }
     // -------------------------------------------------------------

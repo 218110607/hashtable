@@ -85,12 +85,12 @@ public class App {
                         Link theLink = new Link(item);
                                          
                         hashTable.insert(theLink);
-                        hashTable.displayTable();
+                        //hashTable.displayTable();
                     }
                     long readEndTime = System.nanoTime();
                     long readTime = readEndTime - readStartTime;
                     System.out.println("Read Time IN Nano : "+readTime);
-                   // hashTable.displayTable();
+                    //hashTable.displayTable();
                     //Search and remove selected items from the memory;
                     // long deleteStartTime = System.nanoTime();                                         
                     // hashTable.delete(removekeys);                   
@@ -99,23 +99,23 @@ public class App {
                     // System.out.println("Remove Time IN Nano : "+deleteTime);                     
 
                     //Write the result to a CSV output file.
-                    // FileWriter myWriter = new FileWriter(outputFile);
-                    // long writeStartTime = System.nanoTime();    
-                    // for(int i=0; i<hashTable.getArraySize(); i++)
-                    // {
-                    //   SortedList sortedList = hashTable.getHashArray(i);
-                    //   Link current = sortedList.getFirst(); // start at beginning of list
-                    //   while(current != null) // until end of list,
-                    //   {
-                    //        DataItem item = current.getiData(); // print data
-                    //       current = current.next; // move to next link
-                    //       myWriter.write(item.toString());
-                    //   }                                                                          
-                    // }
-                    // myWriter.close();
-                    // long writeEndTime = System.nanoTime();
-                    // long writeTime = writeEndTime - writeStartTime;
-                    // System.out.println("Write Time IN Nano : "+writeTime);
+                    FileWriter myWriter = new FileWriter(outputFile);
+                    long writeStartTime = System.nanoTime();    
+                    for(int i=0; i<hashTable.getArraySize(); i++)
+                    {
+                      SortedList sortedList = hashTable.getHashArray(i);
+                      Link current = sortedList.getFirst(); // start at beginning of list
+                      while(current != null) // until end of list,
+                      {
+                           DataItem item = current.getiData(); // print data
+                          current = current.next; // move to next link
+                          myWriter.write(item.toString());
+                      }                                                                          
+                    }
+                    myWriter.close();
+                    long writeEndTime = System.nanoTime();
+                    long writeTime = writeEndTime - writeStartTime;
+                    System.out.println("Write Time IN Nano : "+writeTime);
                     
                   } 
     }

@@ -16,15 +16,16 @@ public class SortedList {
         Link previous = null; // start at first
         Link current = first;
         // until end of list,
-        while( current != null && key.compareTo(current.getKey(keyOrder)) > 0 )
+        while( current != null && key.compareTo(current.getKey(keyOrder)) != 0 )
         { // or current > key,
             previous = current;
             current = current.next; // go to next item
         }
-        if(previous==null) // if beginning of list,
-            first = theLink; // first --> new link
-        else // not at beginning,
+        if(previous == null)  // if beginning of list,
+            first = theLink;   // first --> new link
+        else    // not at beginning,
             previous.next = theLink; // prev --> new link
+        
         theLink.next = current; // new link --> current
         
     } // end insert()
@@ -67,13 +68,14 @@ public class SortedList {
     // -------------------------------------------------------------
     public void displayList()
     {
-        System.out.print("List (first-->last): ");
+        //System.out.print("List (first-->last): ");
         Link current = first; // start at beginning of list
         while(current != null) // until end of list,
         {
+
             current.displayLink(); // print data
-            current = current.next; // move to next link
+            current = current.next; // move to next link           
         }
-        System.out.println("");
+       
     }
 }

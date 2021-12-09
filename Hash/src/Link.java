@@ -6,7 +6,10 @@ public class Link {
         public Link next; // next link in list
         // -------------------------------------------------------------
         public Link(DataItem it) // constructor
-        { iData = it; }
+        { 
+            iData = it;
+            next = null;
+         }
 
         
         public DataItem getiData() {
@@ -32,6 +35,7 @@ public class Link {
         // -------------------------------------------------------------
         public void  displayLink() // display this link
         {
-             System.out.print(iData + "");
+            if(iData != null)
+                System.out.print(iData + "");
         }
 }
