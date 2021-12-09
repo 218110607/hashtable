@@ -92,11 +92,11 @@ public class App {
                     System.out.println("Read Time IN Nano : "+readTime);
                     //hashTable.displayTable();
                     //Search and remove selected items from the memory;
-                    // long deleteStartTime = System.nanoTime();                                         
-                    // hashTable.delete(removekeys);                   
-                    // long deleteEndTime = System.nanoTime();
-                    // long deleteTime = deleteEndTime - deleteStartTime;
-                    // System.out.println("Remove Time IN Nano : "+deleteTime);                     
+                    long deleteStartTime = System.nanoTime();                                         
+                    hashTable.delete(removekeys);                   
+                    long deleteEndTime = System.nanoTime();
+                    long deleteTime = deleteEndTime - deleteStartTime;
+                    System.out.println("Remove Time IN Nano : "+deleteTime);                     
 
                     //Write the result to a CSV output file.
                     FileWriter myWriter = new FileWriter(outputFile);
