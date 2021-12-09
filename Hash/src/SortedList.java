@@ -42,9 +42,7 @@ public class SortedList {
 
         Link previous = null; // start at first
         Link current = first;
-        while( current != null ){
-          
-            
+        while( current != null ){                      
             // disconnect link
             if(key.compareTo(current.getKey(keyOrder)) == 0 )
             {
@@ -52,9 +50,13 @@ public class SortedList {
                      first = first.next; // delete first link
                  else // not at beginning
                      previous.next = current.next; // delete current link
+                 
+            }else{
+                previous = current;
+                 // go to next link
             }
-            previous = current;
-            current = current.next; // go to next link
+            current = current.next;
+           
             
         }
         // until end of list,
