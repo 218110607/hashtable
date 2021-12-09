@@ -23,15 +23,17 @@ public class App {
               long readStartTime = System.nanoTime();                                    
               HashTableD hashTable = new HashTableD(size,prime,column);
               //read data for data set
-              Scanner finput = new Scanner(file);
-              
-              while (finput.hasNextLine()) {
+              Scanner finput = new Scanner(file);             
+              while (finput.hasNextLine()) {                
                   String line = finput.nextLine();             
                   String[] parts= line.split(",");
                   String countryName = parts[0];
                   String countryCode = parts[1];
                   String year = parts[2];
-                  String value = parts[3];
+                  String value="";
+                  for (int i = 3; i < parts.length; i++) {                   
+                     value += parts[i];
+                  }                  
                   DataItem item = new DataItem(countryName,countryCode,year,value);                      
                   hashTable.insert(item);
               }
@@ -86,7 +88,10 @@ public class App {
                         String countryName = parts[0];
                         String countryCode = parts[1];
                         String year = parts[2];
-                        String value = parts[3];
+                        String value="";
+                        for (int i = 3; i < parts.length; i++) {
+                          value += parts[i];
+                        }  
                         DataItem item = new DataItem(countryName,countryCode,year,value);                          
                         Link theLink = new Link(item);
                                          
