@@ -37,9 +37,7 @@ public class SortedList {
     }
     // -------------------------------------------------------------
     public void delete(String key,int keyOrder) // delete link
-    { // (assumes non-empty list)
-        System.out.println(key);
-
+    { // (assumes non-empty list)      
         Link previous = null; // start at first
         Link current = first;
         while( current != null ){                      
@@ -55,9 +53,7 @@ public class SortedList {
                 previous = current;
                  // go to next link
             }
-            current = current.next;
-           
-            
+            current = current.next;                       
         }
         // until end of list,
         
