@@ -1,0 +1,124 @@
+
+A.csv output.csv 3 8000 1 11 2012
+
+Read Time IN Nano : 190179000
+Remove Time IN Nano : 15873500
+Write Time IN Nano : 12692600
+
+A.csv output.csv 3 8000 2 11 2012
+Read Time IN Nano : 92091800
+Remove Time IN Nano : 53400
+Write Time IN Nano : 10763900
+
+A.csv output.csv 3 8000 1 37 2012
+Read Time IN Nano : 186639100
+Remove Time IN Nano : 18223400
+Write Time IN Nano : 13890900
+
+A.csv output.csv 3 8000 2 37 2012
+Read Time IN Nano : 82199600
+Remove Time IN Nano : 113100
+Write Time IN Nano : 12523900
+
+A.csv output.csv 3 8000 1 919 2012
+Read Time IN Nano : 185575500
+Remove Time IN Nano : 17222600
+Write Time IN Nano : 13105700
+
+A.csv output.csv 3 8000 2 919 2012
+Read Time IN Nano : 82446400
+Remove Time IN Nano : 111400
+Write Time IN Nano : 11291700
+
+
+B.csv output.csv 3 100000 1 11 2002
+Read Time IN Nano : 364166800
+Remove Time IN Nano : 20708200
+Write Time IN Nano : 17521700
+
+B.csv output.csv 3 100000 2 11 2002
+Read Time IN Nano : 137526300
+Remove Time IN Nano : 219900
+Write Time IN Nano : 28253700
+
+B.csv output.csv 3 100000 1 37 2002
+Read Time IN Nano : 361713500
+Remove Time IN Nano : 20962600
+Write Time IN Nano : 16336600
+
+B.csv output.csv 3 100000 2 37 2002
+Read Time IN Nano : 101920200
+Remove Time IN Nano : 82600
+Write Time IN Nano : 23522600
+
+B.csv output.csv 3 100000 1 919 2002
+Read Time IN Nano : 360877000
+Remove Time IN Nano : 20958200
+Write Time IN Nano : 17357200
+
+B.csv output.csv 3 100000 2 919 2002
+Read Time IN Nano : 99040700
+Remove Time IN Nano : 107600
+Write Time IN Nano : 23117400
+
+
+C.csv output.csv 2 24000 1 313 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 1997594100
+Remove Time IN Nano : 47297300
+Write Time IN Nano : 27865500
+
+C.csv output.csv 2 24000 2 313 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 170726400
+Remove Time IN Nano : 116000
+Write Time IN Nano : 19386000
+
+C.csv output.csv 2 24000 1 1913 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 1919296600
+Remove Time IN Nano : 45411000
+Write Time IN Nano : 23347900
+
+C.csv output.csv 2 24000 2 1913 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 168581400
+Remove Time IN Nano : 44800
+Write Time IN Nano : 20762500
+
+C.csv output.csv 2 24000 1 7919 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 1503395200
+Remove Time IN Nano : 40228800
+Write Time IN Nano : 22709500
+
+C.csv output.csv 2 24000 2 7919 WLF JOR CYP BMU ZMB
+Read Time IN Nano : 167190900
+Remove Time IN Nano : 64200
+Write Time IN Nano : 21299500
+
+
+D.csv output.csv 1 100000 1 313 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 15707171400
+Remove Time IN Nano : 1038444900
+Write Time IN Nano : 52192300
+
+D.csv output.csv 1 100000 2 313 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 282098700
+Remove Time IN Nano : 300500
+Write Time IN Nano : 59119700
+
+D.csv output.csv 1 100000 1 1913 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 14464074500
+Remove Time IN Nano : 809508400
+Write Time IN Nano : 46227400
+
+D.csv output.csv 1 100000 2 1913 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 237479600
+Remove Time IN Nano : 275600
+Write Time IN Nano : 44391700
+
+D.csv output.csv 1 100000 1 7919 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 13004343800
+Remove Time IN Nano : 714581500
+Write Time IN Nano : 51785900
+
+D.csv output.csv 1 100000 2 7919 Poland Morocco Senegal Vietnam
+Read Time IN Nano : 226916700
+Remove Time IN Nano : 275000
+Write Time IN Nano : 46187600
